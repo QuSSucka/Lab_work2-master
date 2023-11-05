@@ -23,7 +23,11 @@ protected:
   size_t sz;
   T* pMem;
 public:
-  TDynamicVector(size_t size = 1) : sz(size)
+    void memset(T *pT, int i, size_t i1) {
+
+    }
+
+    TDynamicVector(size_t size = 1) : sz(size)
   {
     if (sz == 0)
       throw out_of_range("Vector size should be greater than zero");
